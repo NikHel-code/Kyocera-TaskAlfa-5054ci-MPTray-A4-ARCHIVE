@@ -1,8 +1,7 @@
 *PPD-Adobe: "4.3"
-*% Kyocera TASKalfa 5054ci - ChromeOS A4 MP Tray (Archive)
-*% Minimal PostScript/KPDL PPD for ChromeOS managed printing - v3
+*% Kyocera TASKalfa 5054ci - ChromeOS A4 Cassette 1 (Archive)
 *FormatVersion: "4.3"
-*FileVersion: "1.2"
+*FileVersion: "1.3"
 *LanguageVersion: English
 *LanguageEncoding: ISOLatin1
 *PCFileName: "K5054CIC.PPD"
@@ -10,7 +9,7 @@
 *Product: "(TASKalfa 5054ci)"
 *ModelName: "Kyocera TASKalfa 5054ci KPDL"
 *ShortNickName: "TASKalfa 5054ci"
-*NickName: "Kyocera TASKalfa 5054ci - A4 MP Tray Archive"
+*NickName: "Kyocera TASKalfa 5054ci - A4 Cassette 1 Archive"
 *PSVersion: "(3011.103) 1"
 *LanguageLevel: "3"
 *ColorDevice: True
@@ -38,8 +37,8 @@
 
 *OpenUI *InputSlot/Paper Source: PickOne
 *OrderDependency: 20 AnySetup *InputSlot
-*DefaultInputSlot: MF1
-*InputSlot MF1/MP Tray: "<< /ManualFeed false >> setpagedevice statusdict begin 3 setpapertray end"
+*DefaultInputSlot: PF730A
+*InputSlot PF730A/Cassette 1: "<< /ManualFeed false >> setpagedevice statusdict begin 0 setpapertray end"
 *CloseUI: *InputSlot
 
 *OpenUI *MediaType/Paper Type: PickOne
