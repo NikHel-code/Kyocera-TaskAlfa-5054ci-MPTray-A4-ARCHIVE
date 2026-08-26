@@ -1,0 +1,72 @@
+*PPD-Adobe: "4.3"
+*% Kyocera TASKalfa 5054ci - ChromeOS A4 MP Tray
+*% Minimal PostScript/KPDL PPD for ChromeOS managed printing.
+*FormatVersion: "4.3"
+*FileVersion: "1.1"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "K5054CIC.PPD"
+*Manufacturer: "Kyocera"
+*Product: "(TASKalfa 5054ci)"
+*ModelName: "Kyocera TASKalfa 5054ci KPDL"
+*ShortNickName: "TASKalfa 5054ci"
+*NickName: "Kyocera TASKalfa 5054ci - A4 MP Tray"
+*PSVersion: "(3011.103) 1"
+*LanguageLevel: "3"
+*ColorDevice: True
+*DefaultColorSpace: CMYK
+*Throughput: "50"
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize A4/A4: "<< /Policies << /PageSize 7 >> /PageSize [595 842] /ImagingBBox null >> setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion A4/A4: "<< /Policies << /PageSize 7 >> /PageSize [595 842] /ImagingBBox null >> setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: A4
+*ImageableArea A4/A4: "12 10 583 832"
+*DefaultPaperDimension: A4
+*PaperDimension A4/A4: "595 842"
+
+*OpenUI *InputSlot/Paper Source: PickOne
+*OrderDependency: 20 AnySetup *InputSlot
+*DefaultInputSlot: MF1
+*InputSlot MF1/MP Tray: "<< /ManualFeed false >> setpagedevice statusdict begin 3 setpapertray end"
+*CloseUI: *InputSlot
+
+*OpenUI *MediaType/Paper Type: PickOne
+*OrderDependency: 21 AnySetup *MediaType
+*DefaultMediaType: User1
+*MediaType User1/Archive: "<</ManualFeed false /MediaType (Custom Type1) /DeferredMediaSelection true >> setpagedevice"
+*CloseUI: *MediaType
+
+*OpenUI *Duplex/Duplex: PickOne
+*OrderDependency: 30 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: "<</Duplex false>>setpagedevice"
+*Duplex DuplexNoTumble/Long Edge: "<</Duplex true /Tumble false>>setpagedevice"
+*Duplex DuplexTumble/Short Edge: "<</Duplex true /Tumble true>>setpagedevice"
+*CloseUI: *Duplex
+
+*OpenUI *ColorModel/Color Mode: PickOne
+*OrderDependency: 31 AnySetup *ColorModel
+*DefaultColorModel: CMYK
+*ColorModel CMYK/Color: "<</ProcessColorModel /DeviceCMYK>>setpagedevice"
+*ColorModel Gray/Black & White: "<</ProcessColorModel /DeviceGray>>setpagedevice"
+*CloseUI: *ColorModel
+
+*CloseGroup: General
+
+*OpenGroup: JCL/JCL
+*JCLBegin: "<1B>%-12345X@PJL JOB<0A>"
+*JCLToPSInterpreter: "@PJL ENTER LANGUAGE=POSTSCRIPT<0A>"
+*JCLEnd: "<1B>%-12345X@PJL EOJ<0A><1B>%-12345X"
+*CloseGroup: JCL/JCL
