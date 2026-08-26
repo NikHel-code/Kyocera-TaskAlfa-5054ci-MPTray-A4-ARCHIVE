@@ -1,8 +1,8 @@
 *PPD-Adobe: "4.3"
-*% Kyocera TASKalfa 5054ci - ChromeOS A4 MP Tray
-*% Minimal PostScript/KPDL PPD for ChromeOS managed printing.
+*% Kyocera TASKalfa 5054ci - ChromeOS A4 MP Tray (Archive)
+*% Minimal PostScript/KPDL PPD for ChromeOS managed printing - v3
 *FormatVersion: "4.3"
-*FileVersion: "1.1"
+*FileVersion: "1.2"
 *LanguageVersion: English
 *LanguageEncoding: ISOLatin1
 *PCFileName: "K5054CIC.PPD"
@@ -10,7 +10,7 @@
 *Product: "(TASKalfa 5054ci)"
 *ModelName: "Kyocera TASKalfa 5054ci KPDL"
 *ShortNickName: "TASKalfa 5054ci"
-*NickName: "Kyocera TASKalfa 5054ci - A4 MP Tray"
+*NickName: "Kyocera TASKalfa 5054ci - A4 MP Tray Archive"
 *PSVersion: "(3011.103) 1"
 *LanguageLevel: "3"
 *ColorDevice: True
@@ -44,8 +44,8 @@
 
 *OpenUI *MediaType/Paper Type: PickOne
 *OrderDependency: 21 AnySetup *MediaType
-*DefaultMediaType: User1
-*MediaType User1/Archive: "<</ManualFeed false /MediaType (Custom Type1) /DeferredMediaSelection true >> setpagedevice"
+*DefaultMediaType: Archive
+*MediaType Archive/Archive: "<</ManualFeed false /MediaType (Archive) >> setpagedevice"
 *CloseUI: *MediaType
 
 *OpenUI *Duplex/Duplex: PickOne
